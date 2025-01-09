@@ -3,3 +3,93 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    padding-top: 100px; /* Adjust this value based on your header height */
+}
+
+/* Header Styling */
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5), 
+                0 0 20px 10px rgba(0, 0, 255, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* H1 Styling */
+header h1 {
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    background: linear-gradient(to right, red 52%, blue 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Navbar Styling */
+.navbar {
+    margin: 0;
+    display: flex; 
+    justify-content: flex-end;
+    width: 100%;
+}
+
+/* List Styling */
+ul.navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+ul.navbar-nav li {
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    margin: 0 10px;
+}
+
+ul.navbar-nav li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+ul.navbar-nav li a:hover,
+ul.navbar-nav li a.active {
+    background-color: blue;
+    color: white;
+}
+
+/* Horizontal line between list items */
+ul.navbar-nav hr {
+    width: 3px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    margin: 0 15px;
+}
+
+.test {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
