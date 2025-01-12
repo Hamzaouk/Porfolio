@@ -172,19 +172,42 @@ ul.navbar-nav li {
 }
 
 /* Navbar Link Styling */
+/* Navbar Link Styling */
 ul.navbar-nav li a {
-    text-decoration: none; /* Remove underline from links */
-    color: white; /* Link text color */
-    padding: 5px 10px; /* Padding around link text */
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-    border-radius: 5px; /* Rounded corners for links */
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
 }
 
-/* Navbar Link Hover Effect */
-ul.navbar-nav li a:hover {
-    background-color: blue; /* Blue background on hover */
-    color: white; /* Ensure text remains white on hover */
+/* Navbar Link Hover and Active Effect */
+ul.navbar-nav li a:hover,
+ul.navbar-nav li a.active {
+    background-color: blue;
+    color: white;
 }
+
+/* Read More button styling */
+.read-more-btn {
+    font-size: 18px;
+    font-weight: bold;
+    color: black !important;
+    background-color: blue !important;
+    border: none;
+    padding: 10px 20px;
+    width: 150px;
+    transition: all 0.3s ease;
+    margin-top: 40px;
+    align-self: center;
+}
+
+/* Read More button hover effect */
+.read-more-btn:hover {
+    background-color: red !important;
+    color: black !important;
+}
+
 
 /* Horizontal Line Between List Items */
 ul.navbar-nav hr {
