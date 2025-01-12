@@ -52,6 +52,7 @@ body {
 
 #home{
     margin-left: 100px;
+    margin-top: 50px;
 }
 
 /* H1 styling */
@@ -194,6 +195,93 @@ ul.navbar-nav hr {
     margin: 0 15px; /* Space around the line */
 }
 
+/* Projects style */
+
+/* Project card image sizing */
+.card-img-top {
+    height: 200px;  /* Reduced height for images */
+    object-fit: cover;  /* Ensures images cover the space without distortion */
+}
+
+/* Ensure consistent card heights */
+.card {
+    height: 100%;  /* Keep existing styles */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1), /* Base shadow */
+                0 0 20px 5px rgba(255, 0, 0, 0.3), /* Red glow */
+                0 0 20px 5px rgba(0, 0, 255, 0.3); /* Blue glow */
+}
+
+.card a{
+   text-decoration: none;
+}
+
+/* Card body and content styling */
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem; /* Standard padding */
+}
+
+/* Card paragraph styling */
+.card-text {
+    max-height: 4.5em; /* Approximately 3 lines of text */
+    overflow: hidden;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+}
+
+/* Card button container */
+.card .btn {
+    margin-top: auto; /* Pushes button to bottom */
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    background-color: blue;
+    border: none;
+    padding: 10px 20px;
+    width: 150px;
+    transition: all 0.3s ease;
+    align-self: center; /* Centers the button horizontally */
+}
+
+.card .btn:hover {
+    background-color: red;
+    color: black;
+}
+
+/* Projects heading styling without form class */
+.projects-heading {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.projects-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.projects-heading:hover::after {
+    width: 150px;
+}
+
+
 /* Contact Form Container */
 .contact-form {
     max-width: 600px; /* Limit the form width */
@@ -261,7 +349,7 @@ ul.navbar-nav hr {
 
 /* Footer Styling */
 footer {
-    background-color: #f8f9fa; /* Light gray background for footer */
+    background-color: #D9D9D9; /* Light gray background for footer */
     padding: 30px 0; /* Padding inside the footer */
 }
 .social-links a{
