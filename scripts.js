@@ -29,4 +29,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
   window.addEventListener('scroll', setActiveLink);
 });
 
+$(document).ready(function() {
+// Scroll to top functionality
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 100) {
+    $('#scroll-to-top').addClass('show');
+  } else {
+    $('#scroll-to-top').removeClass('show');
+  }
+});
 
+$('#scroll-to-top').click(function() {
+  $('html, body').animate({scrollTop : 0}, 1000);
+  return false;
+});
+});
